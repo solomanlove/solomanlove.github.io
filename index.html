@@ -1,8 +1,22 @@
 <html>
 
 <head>hello</head>
+function copy() {
+    let transfer = document.createElement('input');
+    document.body.appendChild(transfer);
+    transfer.value = '这里是想要复制的内容'; 
+    transfer.focus();
+    transfer.select();
+    if (document.execCommand('copy')) {
+        document.execCommand('copy');
+    }
+    transfer.blur();
+    console.log('复制成功');
+    document.body.removeChild(transfer);
+}
 <body>
 你好世杰</br>
+  <button onclick='copy()'>复制到剪贴板</button>
 <a href="https://universal-test-1301203089.cos.ap-beijing.myqcloud.com/splash">applink 打开环球app</a></br>
   
 <a href="com.ubrmb.app://open_ubrmb">deeplink 打开环球app</a></br>
@@ -18,3 +32,4 @@
 </body>
 
 </html>
+
