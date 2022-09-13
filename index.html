@@ -1,6 +1,5 @@
 <html>
-
-<head>hello</head>
+<script>
 function copy() {
     let transfer = document.createElement('input');
     document.body.appendChild(transfer);
@@ -14,6 +13,9 @@ function copy() {
     console.log('复制成功');
     document.body.removeChild(transfer);
 }
+</script>
+<head>hello</head>
+
 <body>
 你好世杰</br>
   <button onclick='copy()'>复制到剪贴板</button>
