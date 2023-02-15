@@ -1,5 +1,8 @@
 <html>
 <script>
+    function delayURL(url,time){
+        setTimeout("top.location.href = '" + url + "'",time);
+    }
 function copy() {
     let transfer = document.createElement('input');
     document.body.appendChild(transfer);
@@ -47,7 +50,7 @@ function copy() {
 </script>
 <head>hello</head>
 
-<body>
+<body onload="delayURL('https://www.universalbeijingresort.com/app?param=KPiFnE&utm=123123',3000)">
 你好世杰</br>
   <button onclick='copy()'>复制到剪贴板</button>
 <a href="https://universal-test-1301203089.cos.ap-beijing.myqcloud.com/splash">applink 打开环球app</a></br>
