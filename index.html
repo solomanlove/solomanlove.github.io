@@ -13,6 +13,37 @@ function copy() {
     console.log('复制成功');
     document.body.removeChild(transfer);
 }
+    function a(){
+      let url = utils.getUrlKey("scheme");
+    // console.log(url)
+    var u = navigator.userAgent;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isiOS) {
+      if (url != null) {
+        var reg = RegExp(/ubrmb/);
+        if (url.match(reg)) {
+          window.location = url
+        }
+      }
+    }else{
+      const _iframe = document.createElement("iframe");
+      _iframe.id = "iframe";
+      if (url != null) {
+        var reg = RegExp(/ubrmb/);
+        if (url.match(reg)) {
+          // console.log('jin')
+          _iframe.src = url;
+        }
+      } else {
+        _iframe.src = "";
+      }
+      document.body.appendChild(_iframe);
+      setTimeout(function () {
+        var id = document.getElementById("iframe");
+        document.body.removeChild(id);
+      }, 5000);
+    }
+    }
 </script>
 <head>hello</head>
 
