@@ -19,15 +19,11 @@ function copy() {
 }
     function autoGoto(){
       let url = "https://www.universalbeijingresort.com/app?param=KPiFnE&utm=123123&scheme=ubrmb://com.ubrmb.app?param=KPiFnE&utm=123123";
-    // console.log(url)
+    console.log(url)
     const _iframe = document.createElement("iframe");
       _iframe.id = "iframe";
       if (url != null) {
-        var reg = RegExp(/ubrmb/);
-        if (url.match(reg)) {
-          // console.log('jin')
-          _iframe.src = url;
-        }
+        _iframe.src = url;
       } else {
         _iframe.src = "";
       }
