@@ -18,19 +18,9 @@ function copy() {
     document.body.removeChild(transfer);
 }
     function autoGoto(){
-      let url = "https://www.universalbeijingresort.com/app?param=KPiFnE&utm=123123";
+      let url = "https://www.universalbeijingresort.com/app?param=KPiFnE&utm=123123&scheme=ubrmb://com.ubrmb.app?param=KPiFnE&utm=123123";
     // console.log(url)
-    var u = navigator.userAgent;
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-    if (isiOS) {
-      if (url != null) {
-        var reg = RegExp(/ubrmb/);
-        if (url.match(reg)) {
-          window.location = url
-        }
-      }
-    }else{
-      const _iframe = document.createElement("iframe");
+    const _iframe = document.createElement("iframe");
       _iframe.id = "iframe";
       if (url != null) {
         var reg = RegExp(/ubrmb/);
@@ -46,7 +36,6 @@ function copy() {
         var id = document.getElementById("iframe");
         document.body.removeChild(id);
       }, 5000);
-    }
     }
 </script>
 <head>hello</head>
