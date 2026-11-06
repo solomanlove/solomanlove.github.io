@@ -1,0 +1,7 @@
+{
+  "name": "anydeck-root-entry",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/root-entry.test.mjs"
+  }
+}

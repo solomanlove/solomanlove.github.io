@@ -1,78 +1,15 @@
-<html>
-<script>
-    function delayURL(){
-        alert("ssss")
-       setTimeout(document.getElementById("sp").click(),10000);
-       
-    }
-function copy() {
-    let transfer = document.createElement('input');
-    document.body.appendChild(transfer);
-    transfer.value = '这里是想要复制的内容'; 
-    transfer.focus();
-    transfer.select();
-    if (document.execCommand('copy')) {
-        document.execCommand('copy');
-    }
-    transfer.blur();
-    console.log('复制成功');
-    document.body.removeChild(transfer);
-}
-    function autoGoto(){
-      let url = "https://www.universalbeijingresort.com/app?param=KPiFnE&utm=123123&scheme=ubrmb://com.ubrmb.app?param=KPiFnE&utm=123123";
-    console.log(url)
-    const _iframe = document.createElement("iframe");
-      _iframe.id = "iframe";
-      if (url != null) {
-        _iframe.src = url;
-      } else {
-        _iframe.src = "";
-      }
-      document.body.appendChild(_iframe);
-      setTimeout(function () {
-        var id = document.getElementById("iframe");
-        document.body.removeChild(id);
-      }, 5000);
-    }
-</script>
-<head>hello</head>
-
-<body onload="delayURL()">
-你好世杰</br>
-  <button onclick='copy()'>复制到剪贴板</button>
-<a href="https://universal-test-1301203089.cos.ap-beijing.myqcloud.com/splash">applink 打开环球app</a></br>
-  
-<a href="com.ubrmb.app://open_ubrmb">schemlink 打开环球app</a></br>
-
-
-<a href="com.ubrmb.app://open_ubrmb">schemlink 打开环球app</a></br>
-
-
-<a href="com.ubrmb.app://open_ubrmb?GrLKIy">schem ,根据code打开环球app</a></br>
-</br>
-</br>
-</br>
-<a href="ubrmb://com.ubrmb.app?param=6CrQ1s&utm=2343434">schem ,打开我的，带上报参数2343434</a></br>
-</br>
-</br></br>
-
-<a href="com.ubrmb.app://open_ubrmb?ubrmb://voucherList">schem 打开环球app指定优惠劵列表</a></br>
-
-<a href="com.ubrmb.app://open_ubrmb?ubrmb://message">schem 打开环球app，指定消息</a></br>
-
-<a href="spdbbank://wap.spdb.com.cn/awakeapp">deeplink 浦发简洁</a></br>
-
-
-</br></br></br></br></br></br>
-<a href="https://www.universalbeijingresort.com/app/">ios打开App</a></br>
-</br>
-</br>
-<a href="https://www.universalbeijingresort.com/app?param=KPiFnE&utm=123123">Android使用Applink打开</a>
-
-</br>
-
-<a href="https://www.universalbeijingresort.com/app?param=KPiFnE&utm=123123&scheme=ubrmb://com.ubrmb.app?param=KPiFnE&utm=123123" ><span id="sp">11111111Android使用Applink打开</span></a>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnyDeck｜任何设备，一个控制台</title>
+  <link rel="canonical" href="https://solomanlove.github.io/AnyDeckWeb/">
+  <!-- 优先保留查询参数和章节锚点；关闭 JavaScript 时由 meta refresh 进入官网。 -->
+  <script src="assets/js/redirect.js"></script>
+  <meta http-equiv="refresh" content="0;url=/AnyDeckWeb/">
+</head>
+<body>
+  <p><a href="/AnyDeckWeb/">正在打开 AnyDeck 官网…</a></p>
 </body>
-
 </html>
-
